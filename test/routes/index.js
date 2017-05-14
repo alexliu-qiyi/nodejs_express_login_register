@@ -73,19 +73,41 @@ router.route("/register").get(function(req,res){    // 到达此路径则渲染r
 });
 
 /* GET home page. */
-router.get("/home",function(req,res){ 
-	if(!req.session.user){ 					//到达/home路径首先判断是否已经登录
+router.get("/u/:username",function(req,res){
+	if(!req.session.user){ 					//到达/u路径首先判断是否已经登录
 		req.session.error = "请先登录"
 		res.redirect("/login");				//未登录则重定向到 /login 路径
 	}
-	res.render("home",{title:'Home'});         //已登录则渲染home页面
+	var username = req.params.username;
+    var models = [];
+    models.push({ name: '111', task_no: 3 })
+    models.push({ name: '222', task_no: 4 })
+    models.push({ name: '333', task_no: 3 })
+    models.push({ name: '444', task_no: 2 })
+    models.push({ name: '555', task_no: 3 })
+    res.render("home",{title:'主页', user:username, models:models});         //已登录则渲染home页面
+});
+
+/* GET home page. */
+router.get("/tasks/:username/:model",function(req,res){
+    if(!req.session.user){ 					//到达/tasks路径首先判断是否已经登录
+        req.session.error = "请先登录"
+        res.redirect("/login");				//未登录则重定向到 /login 路径
+    }
+    var username = req.params.username;
+    var model = req.params.model;
+    var tasks = [];
+    tasks.push({name:"1级", missile: '1', date: "2015-12-01 09:20:44", status: "进行中", progress:"0%" })
+    tasks.push({name:"2级", missile: '2', date: "2015-12-01 09:20:44", status: "进行中", progress:"0%" })
+    tasks.push({name:"3级", missile: '3', date: "2015-12-01 09:20:44", status: "进行中", progress:"0%" })
+    res.render("tasks",{title:'任务列表', user:username, model:model, tasks:tasks});         //已登录则渲染tasks页面
 });
 
 /* GET logout page. */
 router.get("/logout",function(req,res){    // 到达 /logout 路径则登出， session中user,error对象置空，并重定向到根路径
 	req.session.user = null;
 	req.session.error = null;
-	res.redirect("/");
+	res.redirect("/login");
 });
 
 module.exports = router;

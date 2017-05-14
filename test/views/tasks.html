@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../stylesheets/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="../../stylesheets/carousel.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-inverse fixed-top bg-inverse">
+    <a class="navbar-brand" href="#">XXX 实时管理系统</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><%= model %>的任务列表 <span class="sr-only">(current)</span></a>
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>-->
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="button" id="logout">我要注销</button>
+        </form>
+    </div>
+</nav>
+
+
+<div class="container marketing" style="margin-top: 50px">
+    <p>
+    <h3>任务列表</h3>
+
+    <a href="../../u/<%= user %>">返回首页 &raquo;</a>
+    </p>
+
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>任务名称</th>
+                <th>编号</th>
+                <th>日期</th>
+                <th>状态</th>
+                <th>进度</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <% tasks.forEach(function(task){ %>
+            <tr>
+                <td><%= task.name %></td>
+                <td><%= task.missile %></td>
+                <td><%= task.date %></td>
+                <td><%= task.status %></td>
+                <td><%= task.progress %></td>
+            </tr>
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="../../javascripts/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+//        $("#logout").click(function(){
+//            location.href = '../logout';
+//        });
+    });
+</script>
+</body>
+</html>
