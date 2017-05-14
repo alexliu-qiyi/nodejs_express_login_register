@@ -19,11 +19,13 @@ router.route("/login").get(function(req,res){    // 到达此路径则渲染logi
 			res.send(500);
 			console.log(err);
 		}else if(!doc){ 								//查询不到用户名匹配信息，则用户名不存在
+            console.log("##### 用户名不存在");
 			req.session.error = '用户名不存在';
 			res.send(404);							//	状态码返回404
 		//	res.redirect("/login");
 		}else{ 
 			if(req.body.upwd != doc.password){ 	//查询到匹配用户名的信息，但相应的password属性不匹配
+                console.log("##### 密码错误");
 				req.session.error = "密码错误";
 				res.send(404);
 			//	res.redirect("/login");
@@ -39,7 +41,7 @@ router.route("/login").get(function(req,res){    // 到达此路径则渲染logi
 /* GET register page. */
 router.route("/register").get(function(req,res){    // 到达此路径则渲染register文件，并传出title值供 register.html使用
 	res.render("register",{title:'User register'});
-}).post(function(req,res){ 
+}).post(function(req,res){
 	 //这里的User就是从model中获取user对象，通过global.dbHandel全局方法（这个方法在app.js中已经实现)
 	var User = global.dbHandel.getModel('user');
 	var uname = req.body.uname;
@@ -49,7 +51,8 @@ router.route("/register").get(function(req,res){    // 到达此路径则渲染r
 			res.send(500);
 			req.session.error =  '网络异常错误！';
 			console.log(err);
-		}else if(doc){ 
+		}else if(doc){
+            console.log("##### 用户名已存在");
 			req.session.error = '用户名已存在！';
 			res.send(500);
 		}else{ 
@@ -61,7 +64,7 @@ router.route("/register").get(function(req,res){    // 到达此路径则渲染r
                         res.send(500);
                         console.log(err);
                     } else {
-                        req.session.error = '用户名创建成功！';
+                        req.session.success = '用户名创建成功！请重新登录！';
                         res.send(200);
                     }
                   });

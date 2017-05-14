@@ -27,7 +27,7 @@ app.engine("html",require("ejs").__express); // or   app.engine("html",require("
 app.set('view engine', 'html');
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(__dirname + '/public/favicon.ico'));
+// app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -35,14 +35,20 @@ app.use(multer());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(function(req,res,next){ 
+app.use(function(req,res,next){
 	res.locals.user = req.session.user;
 	var err = req.session.error;
+	var success = req.session.success;
 	delete req.session.error;
+	delete req.session.success;
 	res.locals.message = "";
-	if(err){ 
+	if(err){
+	    console.log("##### alert-danger" + err);
 		res.locals.message = '<div class="alert alert-danger" style="margin-bottom:20px;color:red;">'+err+'</div>';
-	}
+	} else if (success){
+        console.log("##### alert-success" + success);
+        res.locals.message = '<div class="alert alert-success" style="margin-bottom:20px;color:deepskyblue;">'+success+'</div>';
+    }
 	next();
 });
 
