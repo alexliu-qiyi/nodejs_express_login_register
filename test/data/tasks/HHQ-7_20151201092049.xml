@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<task>
+  <id>91bbb8aa-a569-4c03-b853-c363ff9aa04b</id>
+  <department>保障二大队</department>
+  <model>HHQ-7</model>
+  <missile>2</missile>
+  <name>筒弹定期维护</name>
+  <status>进行中</status>
+  <progress>0%</progress>
+  <start>2015-12-01 09:20:49</start>
+  <finish>
+  </finish>
+  <workorders>
+    <workorder>
+      <no>HHQ7ZT01</no>
+      <name>导弹技术准备/维护总体工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-7\HHQ7ZT01_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>HHQ7TD11</no>
+      <name>筒弹外观检查工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-7\HHQ7TD11_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>HHQ7TD14</no>
+      <name>筒弹保压工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-7\HHQ7TD14_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>HHQ7TD16</no>
+      <name>筒弹湿度/压力检查、补气操作工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-7\HHQ7TD16_V1.0.xml</template>
+   </workorder>
+  </workorders>
+</task>

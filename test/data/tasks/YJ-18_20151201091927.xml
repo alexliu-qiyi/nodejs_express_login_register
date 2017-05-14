@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<task>
+  <id>1b21d02e-511a-42fd-831c-552dd911c524</id>
+  <department>保障二大队</department>
+  <model>YJ-18</model>
+  <missile>1</missile>
+  <name>技术准备</name>
+  <status>进行中</status>
+  <progress>0%</progress>
+  <start>2015-12-01 09:19:27</start>
+  <finish>
+  </finish>
+  <workorders>
+    <workorder>
+      <no>18ZT01</no>
+      <name>导弹技术准备/维护总体工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\YJ-18\18ZT01_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>18DT11</no>
+      <name>导弹包装箱检查工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\YJ-18\18DT11_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>18DT12</no>
+      <name>导弹外观检查及导弹补气工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\YJ-18\18DT12_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>18DT13</no>
+      <name>导弹进包装箱及包装箱气体置换工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\YJ-18\18DT13_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>18CS71</no>
+      <name>导弹综合检查工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\YJ-18\18CS71_V1.0.xml</template>
+   </workorder>
+  </workorders>
+</task>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<task>
+  <id>da772161-8d71-468a-93aa-fec8d5fa4bb6</id>
+  <department>保障二大队</department>
+  <model>HQ-9A</model>
+  <missile>3</missile>
+  <name>支援设备定期维护</name>
+  <status>进行中</status>
+  <progress>0%</progress>
+  <start>2015-12-01 09:21:28</start>
+  <finish>
+  </finish>
+  <workorders>
+    <workorder>
+      <no>HQ9AZT01</no>
+      <name>导弹技术作业总体工单</name>
+      <status>未录入</status>
+      <file>
+      </file>
+      <template>Templates\HQ-9A\HQ9AZT01_V1.0.xml</template>
+    </workorder>
+    <workorder>
+      <no>HQ9ACS23</no>
+      <name>筒弹测试设备检查工单（一）</name>
+      <status>已录入</status>
+      <file>Forms\201512\HQ-9A_HQ9ACS23_20151201101735.xml</file>
+      <template>Templates\HQ-9A\HQ9ACS23_V1.0.xml</template>
+    </workorder>
+    <workorder>
+      <no>HQ9ACS24</no>
+      <name>筒弹测试设备检查工单（二）</name>
+      <status>未录入</status>
+      <file>
+      </file>
+      <template>Templates\HQ-9A\HQ9ACS24_V1.0.xml</template>
+    </workorder>
+  </workorders>
+</task>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<task>
+  <id>4e2026bd-066e-4c1c-ab87-27b54fa89b8f</id>
+  <department>保障二大队</department>
+  <model>HHQ-7</model>
+  <missile>3</missile>
+  <name>支援设备定期维护</name>
+  <status>进行中</status>
+  <progress>0%</progress>
+  <start>2015-12-01 09:20:53</start>
+  <finish>
+  </finish>
+  <workorders>
+    <workorder>
+      <no>HHQ7ZT01</no>
+      <name>导弹技术准备/维护总体工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-7\HHQ7ZT01_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>HHQ7CS33</no>
+      <name>动态激励装置自检工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-7\HHQ7CS33_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>HHQ7CS34</no>
+      <name>测控间设备自检工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-7\HHQ7CS34_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>HHQ7CS35</no>
+      <name>测试系统自检工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-7\HHQ7CS35_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>HHQ7CS36</no>
+      <name>测试系统自检结果</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-7\HHQ7CS36_V1.0.xml</template>
+   </workorder>
+  </workorders>
+</task>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<task>
+  <id>bde1599f-0392-42c4-bdd5-36f3652a0616</id>
+  <department>保障二大队</department>
+  <model>HHQ-9</model>
+  <missile>1</missile>
+  <name>筒弹技术转级</name>
+  <status>进行中</status>
+  <progress>0%</progress>
+  <start>2015-12-01 09:21:03</start>
+  <finish>
+  </finish>
+  <workorders>
+    <workorder>
+      <no>HHQ9ZT01</no>
+      <name>导弹技术作业总体工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-9\HHQ9ZT01_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>HHQ9TD11</no>
+      <name>筒弹出库检查工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-9\HHQ9TD11_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>HHQ9TD12</no>
+      <name>筒弹补气工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-9\HHQ9TD12_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>HHQ9TD13</no>
+      <name>筒弹气体置换工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-9\HHQ9TD13_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>HHQ9CS21</no>
+      <name>筒弹测试工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-9\HHQ9CS21_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>HHQ9CS22</no>
+      <name>筒弹测试结果</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HHQ-9\HHQ9CS22_V1.0.xml</template>
+   </workorder>
+  </workorders>
+</task>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<task>
+  <id>11151580-d339-4503-af78-a667dd8d9387</id>
+  <department>保障二大队</department>
+  <model>HQ-16</model>
+  <missile>3</missile>
+  <name>支援设备定期维护</name>
+  <status>进行中</status>
+  <progress>0%</progress>
+  <start>2015-12-01 09:21:43</start>
+  <finish>
+  </finish>
+  <workorders>
+    <workorder>
+      <no>HQ16ZT01</no>
+      <name>导弹技术作业总体工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HQ-16\HQ16ZT01_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>HQ16CS21</no>
+      <name>箱弹测试设备自检工单</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HQ-16\HQ16CS21_V1.0.xml</template>
+   </workorder>
+    <workorder>
+      <no>HQ16CS22</no>
+      <name>箱弹测试设备自检结果</name>
+      <status>未录入</status>
+      <file></file>
+      <template>Templates\HQ-16\HQ16CS22_V1.0.xml</template>
+   </workorder>
+  </workorders>
+</task>
