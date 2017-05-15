@@ -43,29 +43,44 @@ var getFiles = {
     },
 };
 
-var getXmls = {
-    getXmls: function (callback) {
+module.exports = {
+    getXml4Model: function (callback) {
         var lists;
-        var tasks = [];
-        lists = getFiles.getFileList("../data/");
+        var models = new Map();
+        lists = getFiles.getFileList(__dirname + "/../data/");
 
         async.each(lists, function(itm, callback) {
             xml2json(itm.path+itm.filename, function (result) {
-                // console.log(result);
-                tasks.push(result)
+                // console.log(result.task.model.toString());
+                if (models.has(result.task.model.toString())) {
+                    var no = models.get(result.task.model.toString()) + 1;
+                    models.set(result.task.model.toString(), no);
+                } else {
+                    models.set(result.task.model.toString(), 1);
+                }
                 callback();
             });
         }, function(err){
             console.log("err is:" + err);
+            callback(models);
+        })
+    },
+
+    getXml4Tasks: function (model, callback) {
+        var lists;
+        var tasks = [];
+        lists = getFiles.getFileList(__dirname + "/../data/");
+
+        async.each(lists, function(itm, callback) {
+            xml2json(itm.path+itm.filename, function (result) {
+                if (model === result.task.model.toString()) {
+                    tasks.push(result.task);
+                }
+                callback();
+            });
+        }, function(err){
+            console.log("err is:" + tasks);
             callback(tasks);
         })
     },
 };
-
-{
-    getXmls.getXmls(function (tasks) {
-        console.log(tasks.toString());
-        console.log("Done");
-    });
-
-}

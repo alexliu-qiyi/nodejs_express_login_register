@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var xmlUtils = require('../utils/xmlUtils');
 
 /* GET index page. */
 router.get('/', function(req, res,next) {
@@ -79,16 +80,13 @@ router.get("/u/:username",function(req,res){
 		res.redirect("/login");				//未登录则重定向到 /login 路径
 	}
 	var username = req.params.username;
-    var models = [];
-    models.push({ name: '111', task_no: 3 })
-    models.push({ name: '222', task_no: 4 })
-    models.push({ name: '333', task_no: 3 })
-    models.push({ name: '444', task_no: 2 })
-    models.push({ name: '555', task_no: 3 })
-    res.render("home",{title:'主页', user:username, models:models});         //已登录则渲染home页面
+
+    xmlUtils.getXml4Model(function (models) {
+        res.render("home",{title:'主页', user:username, models:models});         //已登录则渲染home页面
+    })
 });
 
-/* GET home page. */
+/* GET tasks page. */
 router.get("/tasks/:username/:model",function(req,res){
     if(!req.session.user){ 					//到达/tasks路径首先判断是否已经登录
         req.session.error = "请先登录"
@@ -96,11 +94,9 @@ router.get("/tasks/:username/:model",function(req,res){
     }
     var username = req.params.username;
     var model = req.params.model;
-    var tasks = [];
-    tasks.push({name:"1级", missile: '1', date: "2015-12-01 09:20:44", status: "进行中", progress:"0%" })
-    tasks.push({name:"2级", missile: '2', date: "2015-12-01 09:20:44", status: "进行中", progress:"0%" })
-    tasks.push({name:"3级", missile: '3', date: "2015-12-01 09:20:44", status: "进行中", progress:"0%" })
-    res.render("tasks",{title:'任务列表', user:username, model:model, tasks:tasks});         //已登录则渲染tasks页面
+    xmlUtils.getXml4Tasks(model, function (tasks) {
+        res.render("tasks",{title:'任务列表', user:username, model:model, tasks:tasks});         //已登录则渲染tasks页面
+    })
 });
 
 /* GET logout page. */
