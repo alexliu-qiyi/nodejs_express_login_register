@@ -4,7 +4,8 @@ var xmlUtils = require('../utils/xmlUtils');
 
 /* GET index page. */
 router.get('/', function(req, res,next) {
-  res.render('index', { title: 'Express' });    // 到达此路径则渲染index文件，并传出title值供 index.html使用
+  // res.render('index', { title: 'Express' });    // 到达此路径则渲染index文件，并传出title值供 index.html使用
+    res.redirect("/login");
 });
 
 /* GET login page. */
