@@ -2,9 +2,9 @@
 <task>
   <id>93682ba2-a545-436b-9d51-6ba690529b6e</id>
   <department>保障二大队</department>
-  <model>HQ-16</model>
+  <model>特殊设备3</model>
   <missile>2</missile>
-  <name>箱弹定期维护</name>
+  <name>设备定期维护</name>
   <status>进行中</status>
   <progress>0%</progress>
   <start>2015-12-01 09:21:39</start>

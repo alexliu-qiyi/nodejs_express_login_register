@@ -2,9 +2,9 @@
 <task>
   <id>294f7b1c-666a-4498-9332-95f7e09c4d5d</id>
   <department>保障二大队</department>
-  <model>YJ-18</model>
+  <model>特殊设备5</model>
   <missile>2</missile>
-  <name>燃油更换</name>
+  <name>设备检修</name>
   <status>进行中</status>
   <progress>0%</progress>
   <start>2015-12-01 09:19:32</start>

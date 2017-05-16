@@ -2,9 +2,9 @@
 <task>
   <id>0d16df35-f8fc-4d26-8674-f83a2864c73c</id>
   <department>保障二大队</department>
-  <model>YJ-83</model>
+  <model>特殊设备7</model>
   <missile>1</missile>
-  <name>两年定期维护</name>
+  <name>设备定期维护</name>
   <status>进行中</status>
   <progress>0%</progress>
   <start>2015-12-01 09:18:25</start>

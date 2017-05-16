@@ -2,9 +2,9 @@
 <task>
   <id>37659825-886d-4993-8307-c20ba4895a01</id>
   <department>保障二大队</department>
-  <model>YJ-83</model>
+  <model>特殊设备7</model>
   <missile>1</missile>
-  <name>三级转二级</name>
+  <name>设备返厂检修</name>
   <status>进行中</status>
   <progress>0%</progress>
   <start>2015-12-01 10:00:45</start>

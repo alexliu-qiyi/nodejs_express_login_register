@@ -2,9 +2,9 @@
 <task>
   <id>bde1599f-0392-42c4-bdd5-36f3652a0616</id>
   <department>保障二大队</department>
-  <model>HHQ-9</model>
+  <model>特殊设备2</model>
   <missile>1</missile>
-  <name>筒弹技术转级</name>
+  <name>设备技术转级</name>
   <status>进行中</status>
   <progress>0%</progress>
   <start>2015-12-01 09:21:03</start>

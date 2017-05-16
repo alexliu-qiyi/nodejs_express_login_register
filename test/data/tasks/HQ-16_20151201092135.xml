@@ -2,9 +2,9 @@
 <task>
   <id>ed1eab4e-acff-490b-b27c-e6249acadf31</id>
   <department>保障二大队</department>
-  <model>HQ-16</model>
+  <model>特殊设备3</model>
   <missile>1</missile>
-  <name>箱弹技术转级</name>
+  <name>特殊设备技术转级</name>
   <status>进行中</status>
   <progress>0%</progress>
   <start>2015-12-01 09:21:35</start>

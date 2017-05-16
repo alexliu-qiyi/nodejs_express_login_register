@@ -2,9 +2,9 @@
 <task>
   <id>7579c153-94a7-4507-a60f-826fc440172b</id>
   <department>保障二大队</department>
-  <model>HHQ-9</model>
+  <model>特殊设备2</model>
   <missile>2</missile>
-  <name>筒弹定期维护</name>
+  <name>设备定期维护</name>
   <status>进行中</status>
   <progress>0%</progress>
   <start>2015-12-01 09:21:07</start>
