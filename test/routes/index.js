@@ -10,7 +10,7 @@ router.get('/', function(req, res,next) {
 
 /* GET login page. */
 router.route("/login").get(function(req,res){    // 到达此路径则渲染login文件，并传出title值供 login.html使用
-	res.render("login",{title:'User Login'});
+	res.render("login",{title:'用户登录'});
 }).post(function(req,res){ 					   // 从此路径检测到post方式则进行post数据的处理操作
 	//get User info
 	 //这里的User就是从model中获取user对象，通过global.dbHandel全局方法（这个方法在app.js中已经实现)
@@ -42,7 +42,7 @@ router.route("/login").get(function(req,res){    // 到达此路径则渲染logi
 
 /* GET register page. */
 router.route("/register").get(function(req,res){    // 到达此路径则渲染register文件，并传出title值供 register.html使用
-	res.render("register",{title:'User register'});
+	res.render("register",{title:'用户注册'});
 }).post(function(req,res){
 	 //这里的User就是从model中获取user对象，通过global.dbHandel全局方法（这个方法在app.js中已经实现)
 	var User = global.dbHandel.getModel('user');

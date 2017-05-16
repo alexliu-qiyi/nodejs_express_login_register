@@ -42,7 +42,7 @@
         <% models.forEach(function(value, key, map){ %>
         <div class="col-lg-4">
         <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-        <h2>设备 <%= key %></h2>
+        <h2><%= key %></h2>
         <p>共有 <%= value %> 个任务正在执行</p>
         <p><a class="btn btn-secondary"
                    href="/tasks/<%=user%>/<%=key%>"

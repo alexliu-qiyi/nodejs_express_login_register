@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#"><%= model %>的任务列表 <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#"><%= model %> 的任务列表 <span class="sr-only">(current)</span></a>
             </li>
             <!--<li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -38,7 +38,7 @@
 
 <div class="container marketing" style="margin-top: 50px">
     <p>
-    <h3>设备 <%= model %>任务列表</h3>
+    <h3><%= model %> 任务列表</h3>
 
     <a href="../../u/<%= user %>">返回首页 &raquo;</a>
     </p>
@@ -60,7 +60,7 @@
             <tbody>
             <% tasks.forEach(function(task, index){ %>
             <tr>
-                <td><%= index %></td>
+                <td><%= index + 1 %></td>
                 <td><%= task.name %></td>
                 <td><%= task.missile %></td>
                 <td><%= task.start %></td>
